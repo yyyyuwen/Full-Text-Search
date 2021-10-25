@@ -134,7 +134,7 @@ class AppWindow(QDialog, Ui_fulltext_search):
             print(word_idx)
             print(word_idx[0])
             searched_str.insert(int(word_idx[0]) + num, '<font style =\'background:red;\'>')
-            searched_str.insert(int(word_idx[0]) + + num + len(text) + 1, '</font>')
+            searched_str.insert(int(word_idx[0]) + num + len(text) + 1, '</font>')
             num += 2
                 
         new_article = ''.join(searched_str)
